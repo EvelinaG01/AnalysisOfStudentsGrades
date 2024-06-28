@@ -48,5 +48,5 @@ def display(mean, median, variance):
     print(f"Η Διάμεσος είναι: {median:.3f}")
     print(f"Η Διακύμανση είναι: {variance:.3f}") 
     
-# Εκτέλεση του προγράμματος
+# Execution of the program
 main()
