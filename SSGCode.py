@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 import numpy as np
 import seaborn as sns
 import pandas as pd
@@ -35,6 +29,7 @@ def main():
     
     # Convert grades to DataFrame for seaborn plotting
     df = pd.DataFrame({'Grades': grades})
+    print(df)
     
     # Create two separate figures
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
@@ -44,8 +39,9 @@ def main():
     ax1.set_xlabel('Grades')
     ax1.set_title('Box Plot of Student Grades')
     
+    
     # Plotting Histogram
-    ax2.hist(grades, bins=5, edgecolor='black')
+    ax2.hist(df, bins=5, edgecolor='black')
     ax2.set_xlabel('Grades')
     ax2.set_ylabel('Frequency')
     ax2.set_title('Histogram of Student Grades')
@@ -57,10 +53,3 @@ def main():
     
 # Execution of the program
 main()
-
-
-# In[ ]:
-
-
-
-
